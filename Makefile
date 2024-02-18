@@ -15,9 +15,9 @@ LNDIRS := -L$(CPLEXDIR)/lib/$(SYSTEM)/$(LIBFORMAT) -L$(CONCERTDIR)/lib/$(SYSTEM)
 LDFLAGS := -L../libs -lm -lpthread -ldl -lconcert -lilocplex -l$(CPLEXLIB)
 CPLEXFLAGS := -I$(CPLEXINCDIR) -I$(CONCERTINCDIR)
 
-TARGETS:= cutting
-MAIN   := cutting.o
-OBJ    := cutting.o
+TARGETS:= cutting cutting1 cutting2
+MAIN   := cutting.o cutting1.o cutting2.o
+OBJ    := cutting.o cutting1.o cutting2.o
 DEPS   :=
 
 .PHONY: all, clean
