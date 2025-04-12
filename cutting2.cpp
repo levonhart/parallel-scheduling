@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
 	IloEnv env;
 
 	try{
-		const IloInt n = 9, m = 2, d = 5, T = 200, H = 10;
+		const IloInt n = 9, m = 2, d = 5, T = 130, H = 10;
 		IloNumArray s(env, m, 2, 3);
 		IloNumArray r(env, 1, 4);
 		IloNumArray L(env, n, 18, 14, 12, 6, 36, 9, 9, 12, 12);
